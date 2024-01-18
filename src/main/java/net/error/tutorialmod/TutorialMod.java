@@ -1,5 +1,6 @@
 package net.error.tutorialmod;
 
+import net.error.tutorialmod.item.ModItemGroups;
 import net.error.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,7 +13,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 	}
 }
