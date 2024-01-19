@@ -24,8 +24,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
 
-                        // Advanced Item's
+                        // Advanced Item's / Block's
                         entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModBlocks.SOUND_BLOCK);
 
                         // Ruby Ore type's
                         entries.add(ModBlocks.RUBY_ORE);
