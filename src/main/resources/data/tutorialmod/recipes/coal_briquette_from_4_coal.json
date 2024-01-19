@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "## ",
+    "## ",
+    "   "
   ],
   "key": {
     "#": {
-      "item": "minecraft:coal_block"
+      "item": "tutorialmod:coal"
     }
   },
   "result": {
