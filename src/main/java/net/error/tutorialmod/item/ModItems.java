@@ -15,7 +15,7 @@ public class ModItems {
     public static final Item RUBY = registeritem("ruby", new Item(new FabricItemSettings()));
     public static final Item RAW_RUBY = registeritem("raw_ruby", new Item(new FabricItemSettings()));
     public static final Item METAL_DETECTOR = registeritem("metal_detector",
-            new MetalDetectorItem(new FabricItemSettings().maxDamage(64).maxCount(1)));
+            new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
