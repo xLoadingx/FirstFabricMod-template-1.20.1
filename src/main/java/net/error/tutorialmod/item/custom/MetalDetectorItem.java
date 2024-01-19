@@ -25,6 +25,11 @@ public class MetalDetectorItem extends Item {
             for(int i = 0; i <= positionClicked.getY() + 64; i++) {
                 BlockState state = context.getWorld().getBlockState(positionClicked.down(i));
 
+                if (i == 0 && isValuableBlock(state)) {
+                    player.sendMessage(Text.literal("You're lookin' at it, stupid. Nice job wasting durability"));
+                    break;
+                }
+
                 if(isValuableBlock(state)) {
                     outputValuableCoordinates(positionClicked.down(i), player, state.getBlock());
                     foundBlock = true;
