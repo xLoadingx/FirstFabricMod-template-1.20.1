@@ -27,6 +27,10 @@ public class ModItemGroups {
                         // Advanced Item's / Block's
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModBlocks.SOUND_BLOCK);
+                        entries.add(ModItems.COAL_BRIQUETTE);
+
+                        // Food Item's
+                        entries.add(ModItems.TOMATO);
 
                         // Ruby Ore type's
                         entries.add(ModBlocks.RUBY_ORE);
