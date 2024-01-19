@@ -26,7 +26,7 @@ public class MetalDetectorItem extends Item {
                 BlockState state = context.getWorld().getBlockState(positionClicked.down(i));
 
                 if (i == 0 && isValuableBlock(state)) {
-                    player.sendMessage(Text.literal("You're lookin' at it, stupid. Nice job wasting durability"));
+                    player.sendMessage(Text.literal("You're lookin' at it, stupid."));
                     break;
                 }
 
