@@ -4,6 +4,7 @@ import net.error.tutorialmod.block.ModBlocks;
 import net.error.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.advancement.criterion.Criterion;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Item;
@@ -18,6 +19,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
+    Item RUBY = ModItems.RUBY;
     private static final List<ItemConvertible> RUBY_SMELTABLES = List.of(ModItems.RAW_RUBY,
             ModBlocks.RUBY_ORE, ModBlocks.DEEPSLATE_RUBY_ORE, ModBlocks.NETHER_RUBY_ORE, ModBlocks.END_STONE_RUBY_ORE);
     private static final List<ItemConvertible> RAW_RUBY_BLOCK_TO_RUBY_BLOCK = List.of(ModBlocks.RAW_RUBY_BLOCK);
@@ -60,13 +62,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.COAL), conditionsFromItem(Items.COAL))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.COAL_BRIQUETTE)));
 
-        createDoorRecipe(ModBlocks.RUBY_DOOR, Ingredient.ofItems(ModItems.RUBY)).criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY));
-        createStairsRecipe(ModBlocks.RUBY_STAIRS, Ingredient.ofItems(ModItems.RUBY)).criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY));
-        createFenceRecipe(ModBlocks.RUBY_FENCE, Ingredient.ofItems(ModItems.RUBY)).criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY));
-        createFenceGateRecipe(ModBlocks.RUBY_FENCE_GATE, Ingredient.ofItems(ModItems.RUBY)).criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY));
-        createPressurePlateRecipe(RecipeCategory.MISC, ModBlocks.RUBY_PRESSURE_PLATE, Ingredient.ofItems(ModItems.RUBY)).criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY));
-        createTrapdoorRecipe(ModBlocks.RUBY_TRAPDOOR, Ingredient.ofItems(ModItems.RUBY)).criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_WALL, 6)
                 .pattern("   ")
                 .pattern("###")
@@ -82,5 +77,55 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', ModItems.RUBY)
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_BUTTON)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_DOOR, 3)
+                .pattern("## ")
+                .pattern("## ")
+                .pattern("## ")
+                .input('#', ModItems.RUBY)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_DOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_STAIRS, 4)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .input('#', ModItems.RUBY)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_STAIRS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_FENCE, 3)
+                .pattern("#S#")
+                .pattern("#S#")
+                .pattern("   ")
+                .input('#', ModItems.RUBY)
+                .input('S', ModItems.RUBY_STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_FENCE_GATE, 3)
+                .pattern("S#S")
+                .pattern("S#S")
+                .pattern("   ")
+                .input('#', ModItems.RUBY)
+                .input('S', ModItems.RUBY_STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_FENCE_GATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_PRESSURE_PLATE, 1)
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("## ")
+                .input('#', ModItems.RUBY)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_PRESSURE_PLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_TRAPDOOR, 2)
+                .pattern("   ")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.RUBY)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_TRAPDOOR)));
     }
 }

@@ -21,6 +21,8 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.RAW_RUBY);
 
+                        entries.add(ModItems.RUBY_STAFF);
+
                         // Ruby Block's
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
@@ -68,6 +70,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GOLD_STICK);
                         entries.add(ModItems.IRON_STICK);
                         entries.add(ModItems.STONE_STICK);
+                        entries.add(ModItems.RUBY_STICK);
 
                         entries.add(ModItems.COPPER_STICK_OXIDIZED);
                         entries.add(ModItems.COPPER_STICK_WEATHERED);

@@ -67,8 +67,16 @@ public class ModItems {
                 new Item(new FabricItemSettings()));
     public static final Item WARPED_STICK = registeritem("warped_stick",
                 new Item(new FabricItemSettings()));
+    public static final Item RUBY_STICK = registeritem("ruby_stick",
+            new Item(new FabricItemSettings()));
+
+    // End Of More Sticks
+
+    public static final Item RUBY_STAFF = registeritem("ruby_staff",
+            new Item(new FabricItemSettings().maxCount(1)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
+        entries.add(RUBY_STICK);
         entries.add(RUBY);
         entries.add(RAW_RUBY);
         entries.add(DARK_OAK_STICK);

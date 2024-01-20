@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "tutorialmod:ruby"
+    },
+    "S": {
+      "item": "tutorialmod:ruby_stick"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "#S#",
+    "   "
+  ],
+  "result": {
+    "count": 3,
+    "item": "tutorialmod:ruby_fence"
+  },
+  "show_notification": true
+}
