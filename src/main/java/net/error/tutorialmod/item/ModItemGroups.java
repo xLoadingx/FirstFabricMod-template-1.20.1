@@ -55,6 +55,31 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sticks"))
                     .icon(() -> new ItemStack(Items.STICK)).entries((displayContext, entries) -> {
                         entries.add(Items.STICK);
+                        entries.add(ModItems.DARK_OAK_STICK);
+                        entries.add(ModItems.ACACIA_STICK);
+                        entries.add(ModItems.JUNGLE_STICK);
+                        entries.add(ModItems.BIRCH_STICK);
+
+                        entries.add(ModItems.CRIMSON_STICK);
+                        entries.add(ModItems.WARPED_STICK);
+
+                        entries.add(ModItems.NETHERITE_STICK);
+                        entries.add(ModItems.DIAMOND_STICK);
+                        entries.add(ModItems.GOLD_STICK);
+                        entries.add(ModItems.IRON_STICK);
+                        entries.add(ModItems.STONE_STICK);
+
+                        entries.add(ModItems.COPPER_STICK_OXIDIZED);
+                        entries.add(ModItems.COPPER_STICK_WEATHERED);
+                        entries.add(ModItems.COPPER_STICK_EXPOSED);
+                        entries.add(ModItems.COPPER_STICK_NORMAL);
+
+                        entries.add(ModItems.EMERALD_STICK);
+                        entries.add(ModItems.LAPIS_LAZULI_STICK);
+                        entries.add(ModItems.REDSTONE_STICK);
+                        entries.add(ModItems.COAL_STICK);
+
+                        entries.add(ModItems.SINGULARITY_STICK);
 
                     }).build());
 

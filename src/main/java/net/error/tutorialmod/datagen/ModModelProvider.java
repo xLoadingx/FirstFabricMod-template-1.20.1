@@ -44,5 +44,28 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COAL_BRIQUETTE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.COPPER_STICK_NORMAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_STICK_OXIDIZED, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_STICK_WEATHERED, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_STICK_EXPOSED, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_OAK_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ACACIA_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JUNGLE_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BIRCH_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPRUCE_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.QUARTZ_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMERALD_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LAPIS_LAZULI_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COAL_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REDSTONE_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLD_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STONE_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SINGULARITY_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARPED_STICK, Models.GENERATED);
+
     }
 }
