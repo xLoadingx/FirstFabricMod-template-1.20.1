@@ -2,13 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "## ",
-    "## ",
-    "   "
+    "KKK",
+    "KCK",
+    "KKK"
   ],
   "key": {
-    "#": {
-      "item": "tutorialmod:coal"
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "K": {
+      "item": "minecraft:kelp"
     }
   },
   "result": {
