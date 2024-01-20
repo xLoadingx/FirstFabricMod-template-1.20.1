@@ -30,7 +30,7 @@ public class MetalDetectorItem extends Item {
             boolean foundBlock = false;
             boolean isStupid = false;
 
-            for(int i = 0; i <= positionClicked.getY() + 64; i++) {
+            for(int i = 0; i <= positionClicked.getY() + 126; i++) {
                 BlockState state = context.getWorld().getBlockState(positionClicked.down(i));
 
                 if (i == 0 && isValuableBlock(state)) {

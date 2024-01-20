@@ -20,6 +20,6 @@ public class TutorialMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
-		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);
+		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 2000);
 	}
 }
