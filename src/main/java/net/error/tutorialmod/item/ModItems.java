@@ -22,6 +22,52 @@ public class ModItems {
     public static final Item COAL_BRIQUETTE = registeritem("coal_briquette",
             new Item(new FabricItemSettings()));
 
+    // More Sticks
+    public static final Item CRIMSON_STICK = registeritem("crimson_stick",
+            new Item(new FabricItemSettings()));
+    public static final Item DARK_OAK_STICK = registeritem("dark_oak_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item ACACIA_STICK = registeritem("acacia_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item JUNGLE_STICK = registeritem("jungle_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item BIRCH_STICK = registeritem("birch_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item SPRUCE_STICK = registeritem("spruce_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item COPPER_STICK_OXIDIZED = registeritem("copper_stick_oxidized",
+                new Item(new FabricItemSettings()));
+    public static final Item COPPER_STICK_WEATHERED = registeritem("copper_stick_weathered",
+                new Item(new FabricItemSettings()));
+    public static final Item COPPER_STICK_EXPOSED = registeritem("copper_stick_exposed",
+                new Item(new FabricItemSettings()));
+    public static final Item COPPER_STICK_NORMAL = registeritem("copper_stick_normal",
+                new Item(new FabricItemSettings()));
+    public static final Item QUARTZ_STICK = registeritem("quartz_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item EMERALD_STICK = registeritem("emerald_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item LAPIS_LAZULI_STICK = registeritem("lapis_lazuli_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item COAL_STICK = registeritem("coal_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item REDSTONE_STICK = registeritem("redstone_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item DIAMOND_STICK = registeritem("diamond_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item GOLD_STICK = registeritem("gold_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item IRON_STICK = registeritem("iron_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item STONE_STICK = registeritem("stone_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item NETHERITE_STICK = registeritem("netherite_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item SINGULARITY_STICK = registeritem("singularity_stick",
+                new Item(new FabricItemSettings()));
+    public static final Item WARPED_STICK = registeritem("warped_stick",
+                new Item(new FabricItemSettings()));
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
         entries.add(RAW_RUBY);
