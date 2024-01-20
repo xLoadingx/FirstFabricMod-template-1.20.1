@@ -67,6 +67,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SINGULARITY_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRIMSON_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.WARPED_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUBY_STICK, Models.GENERATED);
 
     }
 }
