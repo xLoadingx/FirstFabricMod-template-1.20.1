@@ -3,6 +3,7 @@ package net.error.tutorialmod.item;
 import net.error.tutorialmod.TutorialMod;
 import net.error.tutorialmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -23,6 +24,15 @@ public class ModItemGroups {
                         // Ruby Block's
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
+                        entries.add(ModBlocks.RUBY_STAIRS);
+                        entries.add(ModBlocks.RUBY_SLAB);
+                        entries.add(ModBlocks.RUBY_BUTTON);
+                        entries.add(ModBlocks.RUBY_PRESSURE_PLATE);
+                        entries.add(ModBlocks.RUBY_FENCE);
+                        entries.add(ModBlocks.RUBY_FENCE_GATE);
+                        entries.add(ModBlocks.RUBY_WALL);
+                        entries.add(ModBlocks.RUBY_TRAPDOOR);
+                        entries.add(ModBlocks.RUBY_DOOR);
 
                         // Advanced Item's / Block's
                         entries.add(ModItems.METAL_DETECTOR);
@@ -39,6 +49,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.END_STONE_RUBY_ORE);
 
                     }).build());
+
+    public static final ItemGroup MORE_STICKS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TutorialMod.MOD_ID, "sticks"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sticks"))
+                    .icon(() -> new ItemStack(Items.STICK)).entries((displayContext, entries) -> {
+                        entries.add(Items.STICK);
+
+                    }).build());
+
 
     public static void registerItemGroups() {
         TutorialMod.LOGGER.info("Registering Mod Items for " + TutorialMod.MOD_ID);
