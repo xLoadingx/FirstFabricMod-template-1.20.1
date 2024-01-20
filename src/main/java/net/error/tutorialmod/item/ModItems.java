@@ -71,6 +71,28 @@ public class ModItems {
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
         entries.add(RAW_RUBY);
+        entries.add(DARK_OAK_STICK);
+        entries.add(ACACIA_STICK);
+        entries.add(JUNGLE_STICK);
+        entries.add(BIRCH_STICK);
+        entries.add(SPRUCE_STICK);
+        entries.add(COPPER_STICK_OXIDIZED);
+        entries.add(COPPER_STICK_WEATHERED);
+        entries.add(COPPER_STICK_EXPOSED);
+        entries.add(COPPER_STICK_NORMAL);
+        entries.add(QUARTZ_STICK);
+        entries.add(EMERALD_STICK);
+        entries.add(LAPIS_LAZULI_STICK);
+        entries.add(COAL_STICK);
+        entries.add(REDSTONE_STICK);
+        entries.add(DIAMOND_STICK);
+        entries.add(GOLD_STICK);
+        entries.add(IRON_STICK);
+        entries.add(STONE_STICK);
+        entries.add(NETHERITE_STICK);
+        entries.add(SINGULARITY_STICK);
+        entries.add(WARPED_STICK);
+        entries.add(CRIMSON_STICK);
     }
 
     private static Item registeritem(String name, Item item) {
