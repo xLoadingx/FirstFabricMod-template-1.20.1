@@ -94,6 +94,33 @@ public class ModItems {
     public static final Item RUBY_BOOTS = registeritem("ruby_boots",
             new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item RUBY_PICKAXE = registeritem("ruby_pickaxe",
+            new PickaxeItem(ModToolMaterial.RUBY, 2, 2f, new FabricItemSettings()));
+
+    public static final Item RUBY_AXE = registeritem("ruby_axe",
+            new AxeItem(ModToolMaterial.RUBY, 9, 3f, new FabricItemSettings()));
+
+    public static final Item RUBY_SWORD = registeritem("ruby_sword",
+            new SwordItem(ModToolMaterial.RUBY, 7, 2f, new FabricItemSettings()));
+
+    public static final Item RUBY_SHOVEL = registeritem("ruby_shovel",
+            new ShovelItem(ModToolMaterial.RUBY, 0, 0f, new FabricItemSettings()));
+
+    public static final Item RUBY_HOE = registeritem("ruby_hoe",
+            new HoeItem(ModToolMaterial.RUBY, 0, 0f, new FabricItemSettings()));
+
+    public static final Item RUBY_HELMET = registeritem("ruby_helmet",
+            new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new FabricItemSettings()));
+
+    public static final Item RUBY_CHESTPLATE = registeritem("ruby_chestplate",
+            new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+
+    public static final Item RUBY_LEGGINGS = registeritem("ruby_leggings",
+            new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+
+    public static final Item RUBY_BOOTS = registeritem("ruby_boots",
+            new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY_STICK);
         entries.add(RUBY);
