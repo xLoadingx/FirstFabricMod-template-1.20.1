@@ -53,8 +53,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SOUND_BLOCK);
                         entries.add(ModItems.COAL_BRIQUETTE);
 
-                        // Food Item's
+                        // Food Item's / Seeds
                         entries.add(ModItems.TOMATO);
+                        entries.add(ModItems.TOMATO_SEEDS);
 
                         // Ruby Ore type's
                         entries.add(ModBlocks.RUBY_ORE);
