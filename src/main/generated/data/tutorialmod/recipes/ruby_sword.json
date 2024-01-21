@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "o": {
+      "item": "tutorialmod:ruby"
+    },
+    "|": {
+      "item": "tutorialmod:netherite_stick"
+    }
+  },
+  "pattern": [
+    " o ",
+    " o ",
+    " | "
+  ],
+  "result": {
+    "item": "tutorialmod:ruby_sword"
+  },
+  "show_notification": true
+}

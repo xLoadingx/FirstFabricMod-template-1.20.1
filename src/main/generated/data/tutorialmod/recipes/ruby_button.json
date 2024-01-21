@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "redstone",
   "key": {
-    "#": {
+    "o": {
       "item": "tutorialmod:ruby"
     }
   },
   "pattern": [
     "   ",
-    " # ",
+    " o ",
     "   "
   ],
   "result": {
