@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "tutorialmod:ruby"
-    },
-    "S": {
+    "/": {
       "item": "tutorialmod:ruby_stick"
+    },
+    "o": {
+      "item": "tutorialmod:ruby"
     }
   },
   "pattern": [
-    "S#S",
-    "S#S",
+    "/o/",
+    "/o/",
     "   "
   ],
   "result": {

@@ -62,70 +62,148 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.COAL), conditionsFromItem(Items.COAL))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.COAL_BRIQUETTE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_WALL, 6)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_WALL, 6)
                 .pattern("   ")
-                .pattern("###")
-                .pattern("###")
-                .input('#', ModItems.RUBY)
+                .pattern("ooo")
+                .pattern("ooo")
+                .input('o', ModItems.RUBY)
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_WALL)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_BUTTON, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.RUBY_BUTTON, 1)
                 .pattern("   ")
-                .pattern(" # ")
+                .pattern(" o ")
                 .pattern("   ")
-                .input('#', ModItems.RUBY)
+                .input('o', ModItems.RUBY)
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_BUTTON)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_DOOR, 3)
-                .pattern("## ")
-                .pattern("## ")
-                .pattern("## ")
-                .input('#', ModItems.RUBY)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.RUBY_DOOR, 3)
+                .pattern("oo ")
+                .pattern("oo ")
+                .pattern("oo ")
+                .input('o', ModItems.RUBY)
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_DOOR)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_STAIRS, 4)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .input('#', ModItems.RUBY)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_STAIRS, 4)
+                .pattern("o  ")
+                .pattern("oo ")
+                .pattern("ooo")
+                .input('o', ModItems.RUBY)
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_STAIRS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_FENCE, 3)
-                .pattern("#S#")
-                .pattern("#S#")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.RUBY_FENCE, 3)
+                .pattern("o/o")
+                .pattern("o/o")
                 .pattern("   ")
-                .input('#', ModItems.RUBY)
-                .input('S', ModItems.RUBY_STICK)
+                .input('o', ModItems.RUBY)
+                .input('/', ModItems.RUBY_STICK)
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_FENCE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_FENCE_GATE, 3)
-                .pattern("S#S")
-                .pattern("S#S")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.RUBY_FENCE_GATE, 3)
+                .pattern("/o/")
+                .pattern("/o/")
                 .pattern("   ")
-                .input('#', ModItems.RUBY)
-                .input('S', ModItems.RUBY_STICK)
+                .input('o', ModItems.RUBY)
+                .input('/', ModItems.RUBY_STICK)
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_FENCE_GATE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_PRESSURE_PLATE, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.RUBY_PRESSURE_PLATE, 1)
                 .pattern("   ")
                 .pattern("   ")
-                .pattern("## ")
-                .input('#', ModItems.RUBY)
+                .pattern("oo ")
+                .input('o', ModItems.RUBY)
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_PRESSURE_PLATE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_TRAPDOOR, 2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.RUBY_TRAPDOOR, 2)
+                .pattern("ooo")
+                .pattern("ooo")
                 .pattern("   ")
-                .pattern("###")
-                .pattern("###")
-                .input('#', ModItems.RUBY)
+                .input('o', ModItems.RUBY)
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUBY_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_SWORD, 1)
+                .pattern(" o ")
+                .pattern(" o ")
+                .pattern(" | ")
+                .input('o', ModItems.RUBY)
+                .input('|', ModItems.NETHERITE_STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_PICKAXE, 1)
+                .pattern("ooo")
+                .pattern(" | ")
+                .pattern(" | ")
+                .input('o', ModItems.RUBY)
+                .input('|', ModItems.NETHERITE_STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_AXE, 1)
+                .pattern("oo ")
+                .pattern("o| ")
+                .pattern(" | ")
+                .input('o', ModItems.RUBY)
+                .input('|', ModItems.NETHERITE_STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_SHOVEL, 1)
+                .pattern(" o ")
+                .pattern(" | ")
+                .pattern(" | ")
+                .input('o', ModItems.RUBY)
+                .input('|', ModItems.NETHERITE_STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_HOE, 1)
+                .pattern("oo ")
+                .pattern(" | ")
+                .pattern(" | ")
+                .input('o', ModItems.RUBY)
+                .input('|', ModItems.NETHERITE_STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.NETHERITE_STICK, 10)
+                .pattern("   ")
+                .pattern(" | ")
+                .pattern(" | ")
+                .input('|', Items.NETHERITE_INGOT)
+                .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.NETHERITE_STICK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SINGULARITY_STICK, 10)
+                .pattern(" | ")
+                .pattern(" O ")
+                .pattern(" | ")
+                .input('|', ModItems.NETHERITE_STICK)
+                .input('O', Items.ENDER_PEARL)
+                .criterion(hasItem(ModItems.NETHERITE_STICK), conditionsFromItem(ModItems.NETHERITE_STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SINGULARITY_STICK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WARPED_STICK, 4)
+                .pattern("   ")
+                .pattern(" | ")
+                .pattern(" | ")
+                .input('|', Items.WARPED_PLANKS)
+                .criterion(hasItem(Items.WARPED_PLANKS), conditionsFromItem(Items.WARPED_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.WARPED_STICK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CRIMSON_STICK, 4)
+                .pattern("   ")
+                .pattern(" | ")
+                .pattern(" | ")
+                .input('|', Items.CRIMSON_PLANKS)
+                .criterion(hasItem(Items.CRIMSON_PLANKS), conditionsFromItem(Items.CRIMSON_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CRIMSON_STICK)));
     }
 }

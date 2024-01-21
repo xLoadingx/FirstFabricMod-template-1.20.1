@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "|": {
+      "item": "minecraft:warped_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    " | ",
+    " | "
+  ],
+  "result": {
+    "count": 4,
+    "item": "tutorialmod:warped_stick"
+  },
+  "show_notification": true
+}

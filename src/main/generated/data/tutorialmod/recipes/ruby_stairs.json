@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
   "key": {
-    "#": {
+    "o": {
       "item": "tutorialmod:ruby"
     }
   },
   "pattern": [
-    "#  ",
-    "## ",
-    "###"
+    "o  ",
+    "oo ",
+    "ooo"
   ],
   "result": {
     "count": 4,
